@@ -6,31 +6,34 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>603</width>
-    <height>590</height>
+    <width>727</width>
+    <height>712</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>603</width>
-    <height>590</height>
+    <width>727</width>
+    <height>712</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>603</width>
-    <height>590</height>
+    <width>727</width>
+    <height>712</height>
    </size>
   </property>
   <property name="windowTitle">
    <string>user_车辆信息</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">#centralwidget{border-image: url(:/background/background1.jpg);}</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QTableWidget" name="tableWidget">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>280</y>
+      <x>100</x>
+      <y>360</y>
       <width>551</width>
       <height>181</height>
      </rect>
@@ -112,8 +115,8 @@
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>160</x>
-      <y>500</y>
+      <x>250</x>
+      <y>580</y>
       <width>211</width>
       <height>41</height>
      </rect>
@@ -128,8 +131,8 @@
    <widget class="QTableWidget" name="tableWidget_2">
     <property name="geometry">
      <rect>
-      <x>120</x>
-      <y>50</y>
+      <x>210</x>
+      <y>100</y>
       <width>301</width>
       <height>171</height>
      </rect>
@@ -201,14 +204,15 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>190</x>
-      <y>10</y>
-      <width>161</width>
-      <height>31</height>
+      <x>260</x>
+      <y>40</y>
+      <width>231</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 18pt &quot;Arial&quot;;</string>
+     <string notr="true">font: 18pt &quot;Arial&quot;;
+font: 28pt &quot;Arial&quot;;</string>
     </property>
     <property name="text">
      <string>停车位信息</string>
@@ -217,32 +221,24 @@
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>220</x>
-      <y>230</y>
-      <width>161</width>
-      <height>31</height>
+      <x>270</x>
+      <y>290</y>
+      <width>201</width>
+      <height>51</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 18pt &quot;Arial&quot;;</string>
+     <string notr="true">font: 18pt &quot;Arial&quot;;
+font: 28pt &quot;Arial&quot;;</string>
     </property>
     <property name="text">
      <string>车辆信息</string>
     </property>
    </widget>
   </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>603</width>
-     <height>26</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <resources/>
+ <resources>
+  <include location="image/user_car.qrc"/>
+ </resources>
  <connections/>
 </ui>

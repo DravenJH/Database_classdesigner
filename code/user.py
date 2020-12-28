@@ -9,16 +9,17 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-
+import image.user
 
 class Ui_user(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
-        Form.resize(1031, 576)
-        Form.setMinimumSize(QtCore.QSize(1031, 576))
-        Form.setMaximumSize(QtCore.QSize(1031, 576))
+        Form.resize(1161, 742)
+        Form.setMinimumSize(QtCore.QSize(1161, 742))
+        Form.setMaximumSize(QtCore.QSize(1161, 742))
+        Form.setStyleSheet("#Form{border-image: url(:/background/background1.jpg);}")
         self.tableWidget = QtWidgets.QTableWidget(Form)
-        self.tableWidget.setGeometry(QtCore.QRect(170, 50, 771, 81))
+        self.tableWidget.setGeometry(QtCore.QRect(250, 130, 771, 81))
         self.tableWidget.setTabKeyNavigation(False)
         self.tableWidget.setProperty("showDropIndicator", False)
         self.tableWidget.setAlternatingRowColors(True)
@@ -42,7 +43,7 @@ class Ui_user(object):
         self.tableWidget.setHorizontalHeaderItem(5, item)
         self.tableWidget.verticalHeader().setMinimumSectionSize(30)
         self.tableWidget_2 = QtWidgets.QTableWidget(Form)
-        self.tableWidget_2.setGeometry(QtCore.QRect(170, 150, 651, 71))
+        self.tableWidget_2.setGeometry(QtCore.QRect(250, 230, 651, 71))
         self.tableWidget_2.setTabKeyNavigation(False)
         self.tableWidget_2.setProperty("showDropIndicator", False)
         self.tableWidget_2.setAlternatingRowColors(True)
@@ -64,7 +65,7 @@ class Ui_user(object):
         self.tableWidget_2.setHorizontalHeaderItem(4, item)
         self.tableWidget_2.verticalHeader().setMinimumSectionSize(30)
         self.tableWidget_3 = QtWidgets.QTableWidget(Form)
-        self.tableWidget_3.setGeometry(QtCore.QRect(170, 230, 651, 71))
+        self.tableWidget_3.setGeometry(QtCore.QRect(250, 310, 651, 71))
         self.tableWidget_3.setTabKeyNavigation(False)
         self.tableWidget_3.setProperty("showDropIndicator", False)
         self.tableWidget_3.setAlternatingRowColors(True)
@@ -86,19 +87,23 @@ class Ui_user(object):
         self.tableWidget_3.setHorizontalHeaderItem(4, item)
         self.tableWidget_3.verticalHeader().setMinimumSectionSize(30)
         self.label = QtWidgets.QLabel(Form)
-        self.label.setGeometry(QtCore.QRect(30, 70, 131, 31))
-        self.label.setStyleSheet("font: 18pt \"Arial\";")
+        self.label.setGeometry(QtCore.QRect(110, 150, 131, 31))
+        self.label.setStyleSheet("font: 18pt \"Arial\";\n"
+"color: rgb(0, 255, 255);\n"
+"color: rgb(0, 255, 255);")
         self.label.setObjectName("label")
         self.label_2 = QtWidgets.QLabel(Form)
-        self.label_2.setGeometry(QtCore.QRect(30, 150, 131, 31))
-        self.label_2.setStyleSheet("font: 18pt \"Arial\";")
+        self.label_2.setGeometry(QtCore.QRect(110, 230, 131, 31))
+        self.label_2.setStyleSheet("font: 18pt \"Arial\";\n"
+"color: rgb(0, 255, 255);")
         self.label_2.setObjectName("label_2")
         self.label_3 = QtWidgets.QLabel(Form)
-        self.label_3.setGeometry(QtCore.QRect(30, 240, 131, 31))
-        self.label_3.setStyleSheet("font: 18pt \"Arial\";")
+        self.label_3.setGeometry(QtCore.QRect(110, 320, 131, 31))
+        self.label_3.setStyleSheet("font: 18pt \"Arial\";\n"
+"color: rgb(0, 255, 255);")
         self.label_3.setObjectName("label_3")
         self.layoutWidget = QtWidgets.QWidget(Form)
-        self.layoutWidget.setGeometry(QtCore.QRect(220, 440, 611, 51))
+        self.layoutWidget.setGeometry(QtCore.QRect(300, 520, 611, 51))
         self.layoutWidget.setObjectName("layoutWidget")
         self.horizontalLayout_2 = QtWidgets.QHBoxLayout(self.layoutWidget)
         self.horizontalLayout_2.setContentsMargins(0, 0, 0, 0)
@@ -116,15 +121,15 @@ class Ui_user(object):
         self.horizontalLayout_2.setStretch(0, 3)
         self.horizontalLayout_2.setStretch(2, 3)
         self.pushButton_3 = QtWidgets.QPushButton(Form)
-        self.pushButton_3.setGeometry(QtCore.QRect(680, 360, 301, 41))
+        self.pushButton_3.setGeometry(QtCore.QRect(760, 440, 301, 41))
         self.pushButton_3.setStyleSheet("font: 16pt \"Arial\";")
         self.pushButton_3.setObjectName("pushButton_3")
         self.pushButton_2 = QtWidgets.QPushButton(Form)
-        self.pushButton_2.setGeometry(QtCore.QRect(350, 360, 301, 41))
+        self.pushButton_2.setGeometry(QtCore.QRect(430, 440, 301, 41))
         self.pushButton_2.setStyleSheet("font: 16pt \"Arial\";")
         self.pushButton_2.setObjectName("pushButton_2")
         self.pushButton = QtWidgets.QPushButton(Form)
-        self.pushButton.setGeometry(QtCore.QRect(20, 360, 301, 41))
+        self.pushButton.setGeometry(QtCore.QRect(100, 440, 301, 41))
         self.pushButton.setStyleSheet("font: 16pt \"Arial\";")
         self.pushButton.setObjectName("pushButton")
 
@@ -180,3 +185,4 @@ class Ui_user(object):
         self.pushButton_3.setText(_translate("Form", "车辆和停车位信息查询"))
         self.pushButton_2.setText(_translate("Form", "小区员工信息查询"))
         self.pushButton.setText(_translate("Form", "宠物信息查询"))
+

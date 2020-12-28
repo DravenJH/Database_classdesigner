@@ -9,22 +9,22 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-
-
+import image.user_pet
 class Ui_user_pet(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(742, 405)
-        MainWindow.setMinimumSize(QtCore.QSize(742, 405))
-        MainWindow.setMaximumSize(QtCore.QSize(742, 405))
+        MainWindow.resize(820, 549)
+        MainWindow.setMinimumSize(QtCore.QSize(820, 549))
+        MainWindow.setMaximumSize(QtCore.QSize(820, 549))
+        MainWindow.setStyleSheet("#centralwidget{border-image: url(:/background/background1.jpg);}")
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.pushButton = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton.setGeometry(QtCore.QRect(210, 270, 271, 51))
+        self.pushButton.setGeometry(QtCore.QRect(250, 360, 271, 51))
         self.pushButton.setStyleSheet("font: 18pt \"Arial\";")
         self.pushButton.setObjectName("pushButton")
         self.tableWidget = QtWidgets.QTableWidget(self.centralwidget)
-        self.tableWidget.setGeometry(QtCore.QRect(50, 20, 651, 191))
+        self.tableWidget.setGeometry(QtCore.QRect(90, 110, 651, 191))
         self.tableWidget.setObjectName("tableWidget")
         self.tableWidget.setColumnCount(5)
         self.tableWidget.setRowCount(4)
@@ -47,13 +47,6 @@ class Ui_user_pet(object):
         item = QtWidgets.QTableWidgetItem()
         self.tableWidget.setHorizontalHeaderItem(4, item)
         MainWindow.setCentralWidget(self.centralwidget)
-        self.menubar = QtWidgets.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 742, 26))
-        self.menubar.setObjectName("menubar")
-        MainWindow.setMenuBar(self.menubar)
-        self.statusbar = QtWidgets.QStatusBar(MainWindow)
-        self.statusbar.setObjectName("statusbar")
-        MainWindow.setStatusBar(self.statusbar)
 
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)

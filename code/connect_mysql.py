@@ -254,7 +254,6 @@ def sql_query_f_staff(a):#参数a为小区id
 
 #超级管理员选择小区
 def sql_select_super_root_h_e(a):#参数a为用户输入的值
-    print(a)
     sql1 = "select id from housing_estate where id = \'" + a[0] + "\';"
     cursor.execute(sql1)
     x = cursor.fetchone();
@@ -281,60 +280,48 @@ def sql_query_super_root_add_community():
     return ret, row
 
 #超级管理员增加小区
-def sql_add_super_root_h_e(a):#参数a为用户输入的值, 小区编号，小区地址，小区开发商，小区名 不能为空值
-    print(a)
+def sql_add_super_root_h_e(a):#参数a为用户输入的值, 小区编号，小区地址，小区开发商，小区名，小区面积不能为空值，小区员工数量，
+    #小区家庭数量，小区停车场数量，小区宠物数量，小区楼栋数量，小区车辆数量均默认为零且增加时不支持赋值
     column = ("id","h_e_name","h_e_developer","h_e_area","h_e_staff","h_e_adress",
               "h_e_family","h_e_parking","h_e_pet","h_e_building","h_e_car")
     temp = (a[0],a[5],a[2],a[3],a[8],a[6],a[10],a[4],a[9],a[7],a[1])
-    print(temp)
     sql2 = "select id from housing_estate where id = \'" + temp[0] + "\';"
     cursor.execute(sql2)
     x = cursor.fetchone()
     conn.commit()
     if x:
-        return 0  # 该用户已经存在
-    print(1)
-    print('a')
+        return 0  # 该小区已经存在
     sql1 = "insert into housing_estate values("
     for i in temp:
-        print(temp.index(i))
         if temp.index(i) == 3:
             if i != -1:
-                sql1 = sql1 + str(i) + ","
+                sql1 = sql1 + str(i) + "0,"
             else:
-                sql1 = sql1 + "null,"
+                sql1 = sql1 + "0,"
         elif temp.index(i) == 5:
             if i != -1:
-                sql1 = sql1 + str(i) + ","
+                sql1 = sql1 + str(i) + "0,"
             else:
-                sql1 = sql1 + "null,"
+                sql1 = sql1 + "0,"
         elif temp.index(i) == 6:
-            if i != -1:
-                sql1 = sql1 + str(i) + ","
-            else:
-                sql1 = sql1 + "null,"
+            sql1 = sql1 + "0,"
         elif temp.index(i) == 7:
-            if i != -1:
-                sql1 = sql1 + str(i) + ","
-            else:
-                sql1 = sql1 + "null,"
+            sql1 = sql1 + "0,"
         elif temp.index(i) == 8:
-            if i != -1:
-                sql1 = sql1 + str(i) + ","
-            else:
-                sql1 = sql1 + "null,"
+            sql1 = sql1 + "0,"
         elif temp.index(i) == 9:
-            if i != -1:
-                sql1 = sql1 + str(i) + ","
-            else:
-                sql1 = sql1 + "null,"
+            sql1 = sql1 + "0,"
+        elif temp.index(i) == 4:
+            sql1 = sql1 + "0,"
+        elif temp.index(i) == 9:
+            sql1 = sql1 + "0,"
         else :
             sql1 = sql1 + "\'" + i + "\',"
     sql1 = sql1[:-1] + ");"
-    print(sql1)
     cursor.execute(sql1)
     conn.commit()
     return 1  # 成功插入
+
 
 #超级管理员删除小区
 def sql_del_super_root_h_e(a):#参数a为用户输入的值,其中小区编号不能为空
@@ -347,6 +334,8 @@ def sql_del_super_root_h_e(a):#参数a为用户输入的值,其中小区编号�
     cursor.execute(sql2)
     conn.commit()
     return 1  # 删除成功
+
+
 
 
 #管理员查看当前小区所有户主信息
@@ -565,8 +554,8 @@ def sql_query_root_h_e_infor(a):#参数a为小区编号
     ret = cursor.fetchall()
     return ret, row
 
-#管理员根据用户输入的信息修改小区信息
-def sql_change_housing_estate(a):#参数a为用户输入的值 , 其中小区编号不能为空
+#管理员根据用户输入的信息修改小区信息，只支持修改小区名，小区开发商，小区面积，小区地址
+def sql_change_housing_estate(a): #参数a为用户输入的值 , 其中小区编号不能为空
     column = ("id", "h_e_name", "h_e_developer", "h_e_area", "h_e_staff", "h_e_adress",
               "h_e_family", "h_e_parking", "h_e_pet", "h_e_building", "h_e_car")
     temp = (a[0],a[5],a[2],a[3],a[8],a[6],a[10],a[4],a[9],a[7],a[1])
@@ -593,6 +582,7 @@ def sql_change_housing_estate(a):#参数a为用户输入的值 , 其中小区编
     cursor.execute(sql2)
     conn.commit()
     return 1  # 修改成功
+
 
 
 #管理员增加户主信息
@@ -922,14 +912,19 @@ def sql_add_parking(a, b):#参数a为用户输入的值，其中地址不能为�
     x = cursor.fetchone()
     if x:
         return 0  # 该停车位已经存在
+    print(1)
     sql3 = "insert into parking values("
     for i in temp:
         if temp.index(i) == 0:
             sql3 = sql3 + "\'" + i + "\',"
             sql3 = sql3 + "\'" + b + "\',"
         elif temp.index(i) == 1:
-            sql3 = sql3 + "\'" + i + "\',"
+            if i != -1:
+                sql3 = sql3 + "\'" + i + "\',"
+            else:
+                sql3 = sql3 + "null,"
     sql3 = sql3[:-1] + ");"
+    print(sql3)
     cursor.execute(sql3)
     sql4 = "update housing_estate set h_e_parking = h_e_parking + 1 where id = \'" + b + "\';"
     cursor.execute(sql4)
@@ -978,10 +973,11 @@ def sql_change_parking(a):#参数a为用户输入的值，其中地址不能为�
     cursor.execute(sql1)
     cursor.execute(sql2)
     new_f_id = cursor.fetchone()
-    if old_f_id:
+    print(old_f_id,new_f_id)
+    if old_f_id[0] !=None:
         sql3 = "update family set parking = parking - 1 where id = \'" + old_f_id[0] + "\';"
         cursor.execute(sql3)
-    if new_f_id:
+    if new_f_id[0] != None:
         sql3 = "update family set parking = parking + 1 where id = \'" + new_f_id[0] + "\';"
         cursor.execute(sql3)
     conn.commit()
@@ -1144,7 +1140,6 @@ def sql_del_family(a):#参数a为用户输入的值，其中家庭编号不能�
             return 1  # 不合法删除
     else:
         return 1  # 不合法删除
-
 #管理员根据用户输入的值修改家庭信息
 def sql_change_family(a):#参数a为用户输入的值，其中家庭编号不能为空且仅支持修改门牌号与家庭成员数量
     print('aaaaaa')

@@ -9,18 +9,18 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-
-
+import image.user_car
 class Ui_user_car(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(603, 590)
-        MainWindow.setMinimumSize(QtCore.QSize(603, 590))
-        MainWindow.setMaximumSize(QtCore.QSize(603, 590))
+        MainWindow.resize(727, 712)
+        MainWindow.setMinimumSize(QtCore.QSize(727, 712))
+        MainWindow.setMaximumSize(QtCore.QSize(727, 712))
+        MainWindow.setStyleSheet("#centralwidget{border-image: url(:/background/background1.jpg);}")
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.tableWidget = QtWidgets.QTableWidget(self.centralwidget)
-        self.tableWidget.setGeometry(QtCore.QRect(30, 280, 551, 181))
+        self.tableWidget.setGeometry(QtCore.QRect(100, 360, 551, 181))
         self.tableWidget.setAlternatingRowColors(True)
         self.tableWidget.setObjectName("tableWidget")
         self.tableWidget.setColumnCount(4)
@@ -54,11 +54,11 @@ class Ui_user_car(object):
         item = QtWidgets.QTableWidgetItem()
         self.tableWidget.setHorizontalHeaderItem(3, item)
         self.pushButton = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton.setGeometry(QtCore.QRect(160, 500, 211, 41))
+        self.pushButton.setGeometry(QtCore.QRect(250, 580, 211, 41))
         self.pushButton.setStyleSheet("font: 18pt \"Arial\";")
         self.pushButton.setObjectName("pushButton")
         self.tableWidget_2 = QtWidgets.QTableWidget(self.centralwidget)
-        self.tableWidget_2.setGeometry(QtCore.QRect(120, 50, 301, 171))
+        self.tableWidget_2.setGeometry(QtCore.QRect(210, 100, 301, 171))
         self.tableWidget_2.setAlternatingRowColors(True)
         self.tableWidget_2.setObjectName("tableWidget_2")
         self.tableWidget_2.setColumnCount(2)
@@ -88,21 +88,16 @@ class Ui_user_car(object):
         item = QtWidgets.QTableWidgetItem()
         self.tableWidget_2.setHorizontalHeaderItem(1, item)
         self.label = QtWidgets.QLabel(self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(190, 10, 161, 31))
-        self.label.setStyleSheet("font: 18pt \"Arial\";")
+        self.label.setGeometry(QtCore.QRect(260, 40, 231, 41))
+        self.label.setStyleSheet("font: 18pt \"Arial\";\n"
+"font: 28pt \"Arial\";")
         self.label.setObjectName("label")
         self.label_2 = QtWidgets.QLabel(self.centralwidget)
-        self.label_2.setGeometry(QtCore.QRect(220, 230, 161, 31))
-        self.label_2.setStyleSheet("font: 18pt \"Arial\";")
+        self.label_2.setGeometry(QtCore.QRect(270, 290, 201, 51))
+        self.label_2.setStyleSheet("font: 18pt \"Arial\";\n"
+"font: 28pt \"Arial\";")
         self.label_2.setObjectName("label_2")
         MainWindow.setCentralWidget(self.centralwidget)
-        self.menubar = QtWidgets.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 603, 26))
-        self.menubar.setObjectName("menubar")
-        MainWindow.setMenuBar(self.menubar)
-        self.statusbar = QtWidgets.QStatusBar(MainWindow)
-        self.statusbar.setObjectName("statusbar")
-        MainWindow.setStatusBar(self.statusbar)
 
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
@@ -165,3 +160,4 @@ class Ui_user_car(object):
         item.setText(_translate("MainWindow", "停车位地址"))
         self.label.setText(_translate("MainWindow", "停车位信息"))
         self.label_2.setText(_translate("MainWindow", "车辆信息"))
+

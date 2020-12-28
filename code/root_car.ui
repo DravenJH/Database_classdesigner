@@ -6,32 +6,35 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>783</width>
-    <height>637</height>
+    <width>872</width>
+    <height>724</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>783</width>
-    <height>637</height>
+    <width>872</width>
+    <height>724</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>783</width>
-    <height>637</height>
+    <width>872</width>
+    <height>724</height>
    </size>
   </property>
   <property name="windowTitle">
    <string>root_车辆信息</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">#centralwidget{border-image: url(:/background/background1.jpg);}</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QTableWidget" name="tableWidget">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>90</y>
-      <width>681</width>
+      <x>100</x>
+      <y>140</y>
+      <width>691</width>
       <height>192</height>
      </rect>
     </property>
@@ -114,14 +117,14 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>310</x>
-      <y>30</y>
-      <width>141</width>
+      <x>330</x>
+      <y>80</y>
+      <width>191</width>
       <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 18pt &quot;Arial&quot;;</string>
+     <string notr="true">font: 28pt &quot;Arial&quot;;</string>
     </property>
     <property name="text">
      <string>车辆信息</string>
@@ -130,8 +133,8 @@
    <widget class="QLineEdit" name="lineEdit">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>310</y>
+      <x>100</x>
+      <y>360</y>
       <width>241</width>
       <height>31</height>
      </rect>
@@ -143,8 +146,8 @@
    <widget class="QLineEdit" name="lineEdit_2">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>360</y>
+      <x>100</x>
+      <y>410</y>
       <width>241</width>
       <height>31</height>
      </rect>
@@ -156,8 +159,8 @@
    <widget class="QLineEdit" name="lineEdit_3">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>410</y>
+      <x>100</x>
+      <y>460</y>
       <width>241</width>
       <height>31</height>
      </rect>
@@ -169,8 +172,8 @@
    <widget class="QLineEdit" name="lineEdit_4">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>460</y>
+      <x>100</x>
+      <y>510</y>
       <width>241</width>
       <height>31</height>
      </rect>
@@ -182,8 +185,8 @@
    <widget class="QLineEdit" name="lineEdit_5">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>510</y>
+      <x>100</x>
+      <y>560</y>
       <width>241</width>
       <height>31</height>
      </rect>
@@ -196,10 +199,13 @@
     <property name="geometry">
      <rect>
       <x>640</x>
-      <y>20</y>
-      <width>101</width>
-      <height>41</height>
+      <y>70</y>
+      <width>141</width>
+      <height>51</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 16pt &quot;Arial&quot;;</string>
     </property>
     <property name="text">
      <string>查询全部</string>
@@ -208,21 +214,24 @@
    <widget class="QPushButton" name="pushButton_2">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>20</y>
+      <x>100</x>
+      <y>70</y>
       <width>101</width>
-      <height>41</height>
+      <height>51</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">font: 16pt &quot;Arial&quot;;</string>
+    </property>
     <property name="text">
-     <string>刷新</string>
+     <string>清屏</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_3">
     <property name="geometry">
      <rect>
-      <x>340</x>
-      <y>310</y>
+      <x>390</x>
+      <y>360</y>
       <width>371</width>
       <height>51</height>
      </rect>
@@ -237,8 +246,8 @@
    <widget class="QPushButton" name="pushButton_4">
     <property name="geometry">
      <rect>
-      <x>340</x>
-      <y>380</y>
+      <x>390</x>
+      <y>430</y>
       <width>171</width>
       <height>51</height>
      </rect>
@@ -253,8 +262,8 @@
    <widget class="QPushButton" name="pushButton_5">
     <property name="geometry">
      <rect>
-      <x>540</x>
-      <y>380</y>
+      <x>590</x>
+      <y>430</y>
       <width>171</width>
       <height>51</height>
      </rect>
@@ -269,8 +278,8 @@
    <widget class="QPushButton" name="pushButton_6">
     <property name="geometry">
      <rect>
-      <x>340</x>
-      <y>440</y>
+      <x>390</x>
+      <y>490</y>
       <width>171</width>
       <height>51</height>
      </rect>
@@ -285,8 +294,8 @@
    <widget class="QPushButton" name="pushButton_7">
     <property name="geometry">
      <rect>
-      <x>540</x>
-      <y>440</y>
+      <x>590</x>
+      <y>490</y>
       <width>171</width>
       <height>51</height>
      </rect>
@@ -301,8 +310,8 @@
    <widget class="QPushButton" name="pushButton_8">
     <property name="geometry">
      <rect>
-      <x>340</x>
-      <y>500</y>
+      <x>390</x>
+      <y>550</y>
       <width>371</width>
       <height>51</height>
      </rect>
@@ -315,18 +324,9 @@
     </property>
    </widget>
   </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>783</width>
-     <height>26</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <resources/>
+ <resources>
+  <include location="image/root_car.qrc"/>
+ </resources>
  <connections/>
 </ui>

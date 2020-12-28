@@ -9,16 +9,19 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-
+import image.user_staff
 
 class Ui_user_staff(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(829, 524)
+        MainWindow.resize(942, 665)
+        MainWindow.setMinimumSize(QtCore.QSize(942, 665))
+        MainWindow.setMaximumSize(QtCore.QSize(942, 665))
+        MainWindow.setStyleSheet("#centralwidget{border-image: url(:/background/background1.jpg);}")
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.tableWidget_2 = QtWidgets.QTableWidget(self.centralwidget)
-        self.tableWidget_2.setGeometry(QtCore.QRect(20, 10, 801, 331))
+        self.tableWidget_2.setGeometry(QtCore.QRect(70, 110, 801, 331))
         self.tableWidget_2.setAlternatingRowColors(True)
         self.tableWidget_2.setObjectName("tableWidget_2")
         self.tableWidget_2.setColumnCount(6)
@@ -66,17 +69,10 @@ class Ui_user_staff(object):
         item = QtWidgets.QTableWidgetItem()
         self.tableWidget_2.setHorizontalHeaderItem(5, item)
         self.pushButton = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton.setGeometry(QtCore.QRect(260, 390, 251, 51))
+        self.pushButton.setGeometry(QtCore.QRect(330, 510, 251, 51))
         self.pushButton.setStyleSheet("font: 18pt \"Arial\";")
         self.pushButton.setObjectName("pushButton")
         MainWindow.setCentralWidget(self.centralwidget)
-        self.menubar = QtWidgets.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 829, 26))
-        self.menubar.setObjectName("menubar")
-        MainWindow.setMenuBar(self.menubar)
-        self.statusbar = QtWidgets.QStatusBar(MainWindow)
-        self.statusbar.setObjectName("statusbar")
-        MainWindow.setStatusBar(self.statusbar)
 
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
@@ -127,3 +123,4 @@ class Ui_user_staff(object):
         item = self.tableWidget_2.horizontalHeaderItem(5)
         item.setText(_translate("MainWindow", "电话"))
         self.pushButton.setText(_translate("MainWindow", "返回"))
+

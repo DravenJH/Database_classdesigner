@@ -6,31 +6,34 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>919</width>
-    <height>783</height>
+    <width>1109</width>
+    <height>887</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>919</width>
-    <height>783</height>
+    <width>1109</width>
+    <height>887</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>919</width>
-    <height>783</height>
+    <width>1109</width>
+    <height>887</height>
    </size>
   </property>
   <property name="windowTitle">
    <string>root_员工信息</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">#centralwidget{border-image: url(:/background/background1.jpg);}</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QTableWidget" name="tableWidget">
     <property name="geometry">
      <rect>
-      <x>80</x>
-      <y>80</y>
+      <x>160</x>
+      <y>140</y>
       <width>791</width>
       <height>211</height>
      </rect>
@@ -129,14 +132,14 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>410</x>
-      <y>30</y>
-      <width>141</width>
+      <x>460</x>
+      <y>70</y>
+      <width>191</width>
       <height>51</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 18pt &quot;Arial&quot;;</string>
+     <string notr="true">font: 28pt &quot;Arial&quot;;</string>
     </property>
     <property name="text">
      <string>员工信息</string>
@@ -145,125 +148,24 @@
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>760</x>
-      <y>20</y>
+      <x>840</x>
+      <y>80</y>
       <width>121</width>
       <height>41</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 16pt &quot;Arial&quot;;</string>
     </property>
     <property name="text">
      <string>全部查询</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit">
-    <property name="geometry">
-     <rect>
-      <x>90</x>
-      <y>330</y>
-      <width>191</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="placeholderText">
-     <string>请输入员工编号</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit_2">
-    <property name="geometry">
-     <rect>
-      <x>90</x>
-      <y>380</y>
-      <width>191</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="placeholderText">
-     <string>请输入姓名</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit_3">
-    <property name="geometry">
-     <rect>
-      <x>90</x>
-      <y>430</y>
-      <width>191</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="placeholderText">
-     <string>请输入职称</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit_4">
-    <property name="geometry">
-     <rect>
-      <x>90</x>
-      <y>480</y>
-      <width>191</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="placeholderText">
-     <string>请输入性别</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit_5">
-    <property name="geometry">
-     <rect>
-      <x>90</x>
-      <y>530</y>
-      <width>191</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="placeholderText">
-     <string>请输入年龄</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit_6">
-    <property name="geometry">
-     <rect>
-      <x>90</x>
-      <y>580</y>
-      <width>191</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="placeholderText">
-     <string>请输入薪资</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit_7">
-    <property name="geometry">
-     <rect>
-      <x>90</x>
-      <y>630</y>
-      <width>191</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="placeholderText">
-     <string>请输入身份证号</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit_8">
-    <property name="geometry">
-     <rect>
-      <x>90</x>
-      <y>680</y>
-      <width>191</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="placeholderText">
-     <string>请输入电话号码</string>
-    </property>
-   </widget>
    <widget class="QPushButton" name="pushButton_2">
     <property name="geometry">
      <rect>
-      <x>350</x>
-      <y>320</y>
+      <x>430</x>
+      <y>380</y>
       <width>481</width>
       <height>71</height>
      </rect>
@@ -278,8 +180,8 @@
    <widget class="QPushButton" name="pushButton_5">
     <property name="geometry">
      <rect>
-      <x>350</x>
-      <y>530</y>
+      <x>430</x>
+      <y>590</y>
       <width>221</width>
       <height>61</height>
      </rect>
@@ -294,8 +196,8 @@
    <widget class="QPushButton" name="pushButton_4">
     <property name="geometry">
      <rect>
-      <x>600</x>
-      <y>430</y>
+      <x>680</x>
+      <y>490</y>
       <width>231</width>
       <height>61</height>
      </rect>
@@ -310,8 +212,8 @@
    <widget class="QPushButton" name="pushButton_3">
     <property name="geometry">
      <rect>
-      <x>350</x>
-      <y>430</y>
+      <x>430</x>
+      <y>490</y>
       <width>221</width>
       <height>61</height>
      </rect>
@@ -326,8 +228,8 @@
    <widget class="QPushButton" name="pushButton_6">
     <property name="geometry">
      <rect>
-      <x>600</x>
-      <y>530</y>
+      <x>680</x>
+      <y>590</y>
       <width>231</width>
       <height>61</height>
      </rect>
@@ -342,8 +244,8 @@
    <widget class="QPushButton" name="pushButton_7">
     <property name="geometry">
      <rect>
-      <x>350</x>
-      <y>620</y>
+      <x>430</x>
+      <y>680</y>
       <width>481</width>
       <height>61</height>
      </rect>
@@ -358,29 +260,91 @@
    <widget class="QPushButton" name="pushButton_1">
     <property name="geometry">
      <rect>
-      <x>70</x>
-      <y>20</y>
+      <x>160</x>
+      <y>80</y>
       <width>121</width>
       <height>41</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">font: 16pt &quot;Arial&quot;;</string>
+    </property>
     <property name="text">
-     <string>刷新</string>
+     <string>清屏</string>
     </property>
    </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>360</y>
+      <width>241</width>
+      <height>411</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLineEdit" name="lineEdit">
+       <property name="placeholderText">
+        <string>请输入员工编号</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_2">
+       <property name="placeholderText">
+        <string>请输入姓名</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_3">
+       <property name="placeholderText">
+        <string>请输入职称</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_4">
+       <property name="placeholderText">
+        <string>请输入性别</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_5">
+       <property name="placeholderText">
+        <string>请输入年龄</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_6">
+       <property name="placeholderText">
+        <string>请输入薪资</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_7">
+       <property name="placeholderText">
+        <string>请输入身份证号</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_8">
+       <property name="placeholderText">
+        <string>请输入电话号码</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
   </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>919</width>
-     <height>26</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <resources/>
+ <resources>
+  <include location="image/root_staff.qrc"/>
+ </resources>
  <connections/>
 </ui>

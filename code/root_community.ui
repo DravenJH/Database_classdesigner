@@ -6,20 +6,35 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1059</width>
-    <height>848</height>
+    <width>1163</width>
+    <height>882</height>
    </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1163</width>
+    <height>882</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1163</width>
+    <height>882</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>root_小区信息</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#centralwidget{border-image: url(:/background/background1.jpg);}</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QTableWidget" name="tableWidget">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>100</y>
-      <width>961</width>
+      <x>130</x>
+      <y>140</y>
+      <width>881</width>
       <height>131</height>
      </rect>
     </property>
@@ -85,73 +100,73 @@
    <widget class="QLineEdit" name="lineEdit">
     <property name="geometry">
      <rect>
-      <x>80</x>
-      <y>240</y>
+      <x>130</x>
+      <y>280</y>
       <width>231</width>
       <height>51</height>
      </rect>
     </property>
     <property name="placeholderText">
-     <string>请输入新的小区编号</string>
+     <string>请输入小区编号</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_2">
     <property name="geometry">
      <rect>
-      <x>360</x>
-      <y>240</y>
+      <x>410</x>
+      <y>280</y>
       <width>271</width>
       <height>51</height>
      </rect>
     </property>
     <property name="placeholderText">
-     <string>请输入新的小区名</string>
+     <string>请输入小区名</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_3">
     <property name="geometry">
      <rect>
-      <x>700</x>
-      <y>240</y>
+      <x>750</x>
+      <y>280</y>
       <width>271</width>
       <height>51</height>
      </rect>
     </property>
     <property name="placeholderText">
-     <string>请输入新的开发商</string>
+     <string>请输入开发商</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_4">
     <property name="geometry">
      <rect>
-      <x>80</x>
-      <y>330</y>
+      <x>130</x>
+      <y>370</y>
       <width>231</width>
       <height>51</height>
      </rect>
     </property>
     <property name="placeholderText">
-     <string>请输入新的小区面积</string>
+     <string>请输入小区面积</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_5">
     <property name="geometry">
      <rect>
-      <x>360</x>
-      <y>330</y>
+      <x>410</x>
+      <y>370</y>
       <width>271</width>
       <height>51</height>
      </rect>
     </property>
     <property name="placeholderText">
-     <string>请输入新的小区员工数量</string>
+     <string>请输入小区员工数量</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_3">
     <property name="geometry">
      <rect>
-      <x>570</x>
-      <y>570</y>
+      <x>620</x>
+      <y>610</y>
       <width>401</width>
       <height>81</height>
      </rect>
@@ -166,8 +181,8 @@
    <widget class="QPushButton" name="pushButton_4">
     <property name="geometry">
      <rect>
-      <x>70</x>
-      <y>680</y>
+      <x>120</x>
+      <y>720</y>
       <width>401</width>
       <height>81</height>
      </rect>
@@ -182,8 +197,8 @@
    <widget class="QPushButton" name="pushButton_6">
     <property name="geometry">
      <rect>
-      <x>570</x>
-      <y>680</y>
+      <x>620</x>
+      <y>720</y>
       <width>401</width>
       <height>81</height>
      </rect>
@@ -198,14 +213,14 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>300</x>
-      <y>30</y>
-      <width>221</width>
+      <x>460</x>
+      <y>70</y>
+      <width>281</width>
       <height>51</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 18pt &quot;Arial&quot;;</string>
+     <string notr="true">font: 28pt &quot;Arial&quot;;</string>
     </property>
     <property name="text">
      <string>    小区信息</string>
@@ -214,8 +229,8 @@
    <widget class="QPushButton" name="pushButton_2">
     <property name="geometry">
      <rect>
-      <x>70</x>
-      <y>570</y>
+      <x>120</x>
+      <y>610</y>
       <width>401</width>
       <height>81</height>
      </rect>
@@ -230,8 +245,8 @@
    <widget class="QPushButton" name="pushButton_1">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>20</y>
+      <x>130</x>
+      <y>80</y>
       <width>131</width>
       <height>51</height>
      </rect>
@@ -240,100 +255,91 @@
      <string notr="true">font: 18pt &quot;Arial&quot;;</string>
     </property>
     <property name="text">
-     <string>刷新</string>
+     <string>清屏</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_6">
     <property name="geometry">
      <rect>
-      <x>700</x>
-      <y>320</y>
+      <x>750</x>
+      <y>360</y>
       <width>271</width>
       <height>51</height>
      </rect>
     </property>
     <property name="placeholderText">
-     <string>请输入新的小区地址</string>
+     <string>请输入小区地址</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_7">
     <property name="geometry">
      <rect>
-      <x>80</x>
-      <y>410</y>
+      <x>130</x>
+      <y>450</y>
       <width>231</width>
       <height>51</height>
      </rect>
     </property>
     <property name="placeholderText">
-     <string>请输入新的小区住户数量</string>
+     <string>请输入小区住户数量</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_8">
     <property name="geometry">
      <rect>
-      <x>360</x>
-      <y>410</y>
+      <x>410</x>
+      <y>450</y>
       <width>271</width>
       <height>51</height>
      </rect>
     </property>
     <property name="placeholderText">
-     <string>请输入新的小区停车位数量</string>
+     <string>请输入小区停车位数量</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_9">
     <property name="geometry">
      <rect>
-      <x>700</x>
-      <y>410</y>
+      <x>750</x>
+      <y>450</y>
       <width>271</width>
       <height>51</height>
      </rect>
     </property>
     <property name="placeholderText">
-     <string>请输入新的小区宠物数量</string>
+     <string>请输入小区宠物数量</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_10">
     <property name="geometry">
      <rect>
-      <x>220</x>
-      <y>490</y>
+      <x>270</x>
+      <y>530</y>
       <width>231</width>
       <height>51</height>
      </rect>
     </property>
     <property name="placeholderText">
-     <string>请输入新的小区楼栋</string>
+     <string>请输入小区楼栋</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_11">
     <property name="geometry">
      <rect>
-      <x>550</x>
-      <y>490</y>
+      <x>600</x>
+      <y>530</y>
       <width>251</width>
       <height>51</height>
      </rect>
     </property>
     <property name="placeholderText">
-     <string>请输入新的小区车辆</string>
+     <string>请输入小区车辆</string>
     </property>
    </widget>
   </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>1059</width>
-     <height>26</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <resources/>
+ <resources>
+  <include location="image/root_community.qrc"/>
+ </resources>
  <connections/>
 </ui>
